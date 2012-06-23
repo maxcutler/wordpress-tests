@@ -55,4 +55,5 @@ eval(substr($wp_settings_content, $offset));
 unset($wp_settings_content, $offset, $shortinit_phrase);
 
 require dirname( __FILE__ ) . '/lib/testcase.php';
+require dirname( __FILE__ ) . '/lib/testcase-xmlrpc.php';
 require dirname( __FILE__ ) . '/lib/exceptions.php';
