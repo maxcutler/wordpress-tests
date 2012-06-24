@@ -22,6 +22,8 @@ global $wpdb, $current_site, $current_blog, $wp_rewrite, $shortcode_tags, $wp;
 
 require_once $config_file_path;
 
+define( 'DIR_TESTDATA', dirname( __FILE__ ) . '/data' );
+
 $_SERVER['SERVER_PROTOCOL'] = 'HTTP/1.1';
 $_SERVER['HTTP_HOST'] = WP_TESTS_DOMAIN;
 $PHP_SELF = $GLOBALS['PHP_SELF'] = $_SERVER['PHP_SELF'] = '/index.php';
@@ -57,3 +59,4 @@ unset($wp_settings_content, $offset, $shortinit_phrase);
 require dirname( __FILE__ ) . '/lib/testcase.php';
 require dirname( __FILE__ ) . '/lib/testcase-xmlrpc.php';
 require dirname( __FILE__ ) . '/lib/exceptions.php';
+require dirname( __FILE__ ) . '/lib/utils.php';
